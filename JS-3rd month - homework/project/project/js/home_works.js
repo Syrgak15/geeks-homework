@@ -17,17 +17,58 @@ gmailButton.onclick = () => {
 };
 
 //block mover
-
 const block = document.querySelector('.child_block');
-let movePxCount = 0;
-const mover = () =>{
-    movePxCount++;
-    if(movePxCount < 449){
-        block.style.left = `${movePxCount}px`;
+const parentBlock = document.querySelector('.parent_block');
+let movePxCountX = 0;
+let movePxCountY = 0;
+const parentWidth = parentBlock.offsetWidth - block.offsetWidth;
+const parentHeight = parentBlock.offsetHeight - block.offsetHeight;
+
+const mover = () => {
+    if (movePxCountX < parentWidth) {
+        movePxCountX++;
+        block.style.left = `${movePxCountX}px`;
+    }else if (movePxCountX >= parentWidth && movePxCountY < parentHeight) {
+        movePxCountY++;
+        block.style.top = `${movePxCountY}px`;
     }
-    requestAnimationFrame(mover);
-}
-mover();
+
+    requestAnimationFrame(mover)
+
+};
+mover()
+
+
+//TIMER
+const timer = document.querySelector('.interval')
+const startButton = document.querySelector('#start');
+const stopButton = document.querySelector('#stop');
+const resetButton = document.querySelector('#reset');
+
+let count = 0;
+
+let intervalId;
+
+startButton.addEventListener('click', () => {
+    intervalId = setInterval(() => {
+        count++;
+        timer.innerHTML = count;
+    }, 1000);
+});
+
+stopButton.addEventListener('click', () => {
+    clearInterval(intervalId);
+});
+
+resetButton.addEventListener('click', () => {
+    count = 0;
+    timer.innerHTML = count;
+});
+
+
+
+
+
 
 
 
