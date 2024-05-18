@@ -1,0 +1,17 @@
+body{
+    background-color: darkorchid;
+}
+.block{
+    width:150px;
+    height:150px;
+    border: 2px solid black;
+    margin:0 auto;
+    margin-top:300px;
+}
+.green{
+    background-color: green;
+}
+.default{
+    background-color: red;
+
+}
