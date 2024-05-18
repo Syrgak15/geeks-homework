@@ -1,0 +1,32 @@
+[
+  {
+    "name":"The Titan",
+    "age": 983,
+    "person_photo": "https://i0.wp.com/insider-gaming.com/wp-content/uploads/2024/04/Big-Slap-Monster-Content-Warning.jpg?resize=1024%2C512&ssl=1",
+    "bio": "The Big Slap is a large humanoid Entity that can be found in Content Warning",
+    "dangerLevel": 5
+  },
+  {
+    "name": "CamCreep",
+    "age": 992,
+    "person_photo": "https://contentwarning.wiki.gg/images/8/89/CamCreep.png",
+    "bio": "CamCreep is an Entity in Content Warning, only visible through the Camera",
+    "dangerLevel": 5
+  },
+  {
+    "name": "Streamer",
+    "age": 921,
+    "person_photo": "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2024/04/content-warning-system-requirements.jpg",
+    "bio": "The true boss of Content Warning.Also known as a Streamer Killer",
+    "dangerLevel": 6
+
+  },
+  {
+    "name": "Knifo",
+    "age": 955,
+    "person_photo": "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2024/04/content-warning-monsters-knifo.jpg",
+    "bio": "Knifo is a knife-wielding Entity that can be found in Content Warning.",
+    "dangerLevel": 3
+  }
+
+]

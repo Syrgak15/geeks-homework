@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Sun Jing Woo",
+    "age": 24,
+    "profession": "Hunter",
+    "nickname": "The weakest hunter",
+    "gender": "male",
+    "isMarried": true,
+    "isRich": true,
+    "address": {
+      "country": "South Korea",
+      "city": "Seoul",
+      "house": "Unit",
+      "number": 902
+    }
+
+  }
+]
