@@ -50,8 +50,72 @@ const autoSlider = (index = 0) => {
 }
 autoSlider()
 
+// CONVERTER
+const somInput = document.querySelector('#som')
+const usdInput = document.querySelector('#usd')
+const liraInput = document.querySelector('#lira')
+
+// somInput.oninput = ()=>{
+//     const request = new XMLHttpRequest();
+//     request.open('GET','../data/converter.json')
+//     request.setRequestHeader('Content-type','application/json')
+//     request.send()
+//     request.onload = () =>{
+//         const data = JSON.parse(request.response)
+//         usdInput.value = (somInput.value / data.usd).toFixed(2)
+//     }
+// }
+// usdInput.oninput = ()=>{
+//     const request = new XMLHttpRequest();
+//     request.open('GET','../data/converter.json')
+//     request.setRequestHeader('Content-type','application/json')
+//     request.send()
+//     request.onload = () =>{
+//         const data = JSON.parse(request.response)
+//         somInput.value = (usdInput.value * data.usd).toFixed(2)
+//
+//     }
+// }
+
+//DRY - don't repeat yourself
+// KISS - keep it simple stupid
+// SOLID -
+
+const converter = (element,targetElement,secondTargetElement)=>{
+    element.oninput = () => {
+        const request = new XMLHttpRequest();
+        request.open('GET','../data/converter.json')
+        request.setRequestHeader('Content-type','application/json')
+        request.send()
+
+        request.onload = () =>{
+            const data = JSON.parse(request.response)
+            if(element.id === 'som'){
+                targetElement.value = (element.value / data.usd).toFixed(2)
+                secondTargetElement.value = (element.value*data.somToLira).toFixed(2)
+            }
+            if(element.id === 'usd'){
+                targetElement.value = (element.value * data.usd).toFixed(2)
+                secondTargetElement.value = (element.value*data.usdToLira).toFixed(2)
+            }
+            if(element.id === 'lira'){
+                targetElement.value = (element.value/data.usdToLira).toFixed(2)
+                secondTargetElement.value = (element.value*data.liraToSom).toFixed(2)
+            }
+            if(element.value === ''){
+                targetElement.value = ''
+                secondTargetElement.value = ''
+            }
 
 
+        }
+    }
+
+
+}
+converter(somInput,usdInput,liraInput)
+converter(usdInput,somInput,liraInput)
+converter(liraInput,usdInput,somInput)
 
 
 
