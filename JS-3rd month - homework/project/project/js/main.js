@@ -76,8 +76,73 @@ prev.onclick = () => {
 
 autoSlider(index)
 
+// Hell callback - адский колбек
+// const delay = 2000;
+// console.log("Загрузка данных")
+// setTimeout(()=>{
+//     const product = {
+//         name: "Cola",
+//         price : "$5",
+//         volume : "0.5l"
+//     }
+//     productLogger(product)
+//     setTimeout(()=>{
+//         product.name = 'Fanta'
+//         productLogger(product)
+//     },delay)
+//             setTimeout(()=>{
+//           product.name = 'Sprite'
+//             product.volume = "0.3l"
+//             productLogger(product)
+//     },delay)
+//
+//
+// },delay)
+//
+//
 
+const productLogger = (product)=>{
+    const {name,price,volume} = product // деструктуризация
+    console.log(`name : ${name}\nprice : ${price}\nvolume : ${volume}`) //\n - это перенос строки
 
+}
 
+// Promise - Обещание
 
+// const promise = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         const product = {
+//         name: "Cola",
+//         price : "$5",
+//         volume : "0.5l"
+//     }
+//     productLogger(product)
+//         resolve(product) // вызывается если promise выполняется без ошибок
+//         reject()    // вызывается если promise не выполняется или выполняется с ошибками
+//     },2000)
+// })
+//
+// promise.then(()=>{
+//     setTimeout(()=>{
+//         product.name = "fanta"
+//         productLogger(product)
+//     },2000)
+//
+// },()=>{
+//     console.log('not ok')
+// })
+
+//fetch - под капотом у нее принцип Promise
+//API - application programming interface - для взаимодействия с Backend
+
+//https://jsonplaceholder.typicode.com - просто ссылка на сервер
+//https://jsonplaceholder.typicode.com/todos - API
+
+fetch("https://jsonplaceholder.typicode.com/todos") // Замену xhr = newXHR request с методом GET автоматически
+.then((response)=>{
+    response.json()
+        .then((data)=>{
+            console.log(data)
+        })
+})
 

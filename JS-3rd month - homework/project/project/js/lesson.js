@@ -117,6 +117,56 @@ converter(somInput,usdInput,liraInput)
 converter(usdInput,somInput,liraInput)
 converter(liraInput,usdInput,somInput)
 
+// CARD SWITCHER
+
+const card = document.querySelector('.card')
+const btnNext = document.querySelector('#btn-next')
+const btnPrev = document.querySelector('#btn-prev')
+let cardId = 1;
+window.onload = ()=>{
+    card.style.borderColor = 'red'
+    card.innerHTML = `
+     <p>delectus aut autem</p>
+     <p style="color:red">false</p>
+     <span>1</span>  
+    `
+}
+const fetchMethod = ()=>{
+    fetch(`https://jsonplaceholder.typicode.com/todos/${cardId}`)
+        .then(response => response.json())
+        .then(data =>{
+            const {id,title,completed} = data
+                card.style.borderColor = completed ? 'green':'red'
+                card.innerHTML = `
+                   <p>${title}</p>
+                    <p style="color:${completed ? 'green' : 'red'}">${completed}</p>
+                    <span>${id}</span>    
+                    
+                    `
+        })
+
+}
+
+btnNext.onclick = ()=>{
+    cardId<200? cardId++ : cardId=1;
+    fetchMethod()
+}
+
+btnPrev.onclick = ()=>{
+    cardId>1? cardId--: cardId=200;
+    fetchMethod()
+}
+
+// fetch post запрос
+
+const postFetch = ()=>{
+    fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(response =>response.json())
+        .then(data =>{
+            console.log(data)
+        })
+}
+postFetch()
 
 
 
