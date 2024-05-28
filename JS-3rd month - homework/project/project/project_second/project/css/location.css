@@ -1,0 +1,80 @@
+.location_content{
+    position:relative;
+    width: 100%;
+    height: 1100px;
+    text-transform: uppercase;
+
+}
+
+
+.location_img{
+    width:100%;
+    height:450px;
+    z-index: 1;
+    background: url('../../images/location-bg-.jpg') center center no-repeat;
+
+}
+.location_title{
+    position: absolute;
+    top:230px;
+    left:38%;
+    color:white;
+    font-weight: bold;
+    font-size: 47px;
+    text-align: center;
+    font-family: Georgia;
+
+}
+.location_info{
+    position: relative;
+    width:40%;
+    height:auto;
+    /*border:2px solid red;*/
+    margin-top: 66px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+
+}
+
+.location_info .divider_adress{
+    margin-left: 2px;
+    margin-top: 25px;
+    width:130px;
+}
+.location_info .lc-name{
+    font-weight: bold;
+    font-size: 40px;
+    color: #88774f;
+    font-family: Georgia;
+}.location_info .lc-adress{
+    font-weight: bold;
+    font-size: 30px;
+    color: #352f5b;
+    font-family: "Noto sa";
+}.location_info .lc-number{
+    font-weight: bold;
+    font-size: 30px;
+    color: #352f5b;
+    font-family: "Noto sa";
+}.location_info .lc-email{
+    font-weight: bold;
+    font-size: 30px;
+    color: #352f5b;
+    font-family: "Noto sa";
+}
+.location_map{
+    width: 50%;
+    position: absolute;
+    top:-35px;
+    left:880px;
+
+}
+.sub_content_divider{
+    height:5px;
+    background-color: #2E9AFF;
+    width:100%;
+    margin-top: 30px    ;
+}
