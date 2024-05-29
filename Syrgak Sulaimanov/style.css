@@ -1,0 +1,26 @@
+body{
+    background: black;
+}
+.block{
+    width:200px;
+    height: 200px;
+    background: green;
+
+}
+.block_off{
+    display:none;
+}
+button{
+    width:100px;
+    height:100px;
+    margin-top: 30px;
+}
+.zero{
+    background-color: yellow;
+    margin: 0 auto;
+    width:200px;
+    height:200px;
+    text-align: center;
+    font-size: 25px ;
+
+}
