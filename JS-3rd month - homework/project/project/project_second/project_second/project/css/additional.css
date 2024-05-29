@@ -1,0 +1,38 @@
+.cards_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 10px;
+    margin-top: 90px;
+}
+.card{
+    width:250px;
+    height:350px;
+    border-radius: 10px;
+    border: 2px solid #7F6EDB;
+    transition: transform 0.5s ease;
+
+}
+.card:hover{
+    transform: scale(1.25);
+
+}
+.card img{
+    display: block;
+    margin: 0 auto;
+    width:100px;
+    height:auto;
+    object-fit: cover;
+}
+.card h2 {
+    padding: 16px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+}
+.card p {
+    padding: 0 16px 16px;
+    margin: 0;
+    font-size: 14px;
+}
