@@ -1,0 +1,329 @@
+/*ONLINE LEARNING*/
+.wrapper_main{
+    position:relative;
+
+}
+.bg-photo{
+    background: url("../../images/programmes-bg.jpg")center center/cover no-repeat;
+    width:100%;
+    height:500px;
+}
+.title{
+    position:absolute;
+    top:5%;
+    left:34%;
+    color:white;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: Georgia;
+}
+
+/*SUB_MAIN*/
+.wrapper_sub{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:800px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.sub_main_divider_open,.sub_main_divider_close{
+    height:2px;
+    width:60px;
+    background-color: #352f5b;
+}
+.sub_main_title{
+    color:#352f5b;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: Georgia;
+}
+.sub_main_text{
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 1000px;
+    font-weight: bold;
+    color:#182030;
+    font-size: 22px;
+    line-height: 30px;
+    font-family: "Noto sa";
+
+}
+/*COURSES PART*/
+
+.course_title{
+    font-weight: bold;
+    color:#352f5b;
+    font-size: 45px;
+    margin-top: 150px;
+    width:800px;
+    font-family: Georgia;
+}
+.course_card{
+    width:100%;
+    margin-top: 80px;
+}
+.course_divider_top{
+    height:3px;
+    background-color: #352f5b;
+    width:100%;
+    margin-top: 5px;
+
+
+}
+.course_name{
+    font-weight: bold;
+    font-size: 46px;
+    font-family: "Georgia";
+    color:#88774f;
+
+}
+.course_divider_bottom{
+    height:5px;
+    width:150px;
+    background-color: #352f5b;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.course_exp{
+    font-weight: 500;
+    font-family: "Century Gothic";
+    margin-top: 0;
+    line-height: 1.6;
+    color:#373737;
+    font-size: 30px;
+    width: 60%;
+}
+
+.course_img{
+    position:relative;
+}
+.course_img img{
+    width:400px;
+    height:350px;
+    border:2px solid grey;
+    border-radius:10px;
+}
+.course_img .first_img{
+    position:absolute;
+    left:780px;
+    top:-230px;
+    transition: transform 0.5s ease;
+}
+.course_img .first_img:hover{
+    transform: scale(1.25);
+
+}
+.course_descr{
+    line-height: 1.6;
+    width: 60%;
+    margin-top: 0;
+
+}
+.course_descr p strong{
+    color:#352f5b;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Noto sa";
+
+}
+.course_descr p{
+    color:#352f5b;
+    font-family: "Century Gothic";
+    font-size: 21px;
+    font-weight: 500;
+
+}
+/*.course_img .second_img{*/
+/*    position:absolute;*/
+/*    left:820px;*/
+/*    top:10px;*/
+
+/*}*/
+/* GMAIL BLOCK */
+
+.gmail_block {
+    padding: 10px 0;
+    /*background:var(--orange);*/
+    position:relative;
+}
+.container_gmail{
+    position: absolute;
+    width:60%;
+    margin: 0 auto;
+    right:450px;
+
+}
+.inner_gmail_block {
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    /*border: 1px solid red;*/
+    height: 300px;
+    border-radius: 20px;
+    align-items: center;
+}
+.receiving{
+    position: absolute;
+    top:15px;
+    right:30px;
+    width:300px;
+
+}
+.input{
+    background-color:#7F6EDB;
+    transition: 1s;
+    left:12px;
+    border-radius: 10px;
+}
+.checker{
+    font-size: 21px;
+    font-family: "Century Gothic";
+    width:100%;
+    font-weight: bold;
+
+}
+.input:hover{
+    background-color: #1d1d1d;
+}
+.form_wrapper{
+    display: none;
+    position:absolute;
+    top:105px;
+    left:370px;
+}
+.form_gmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_gmail button {
+    width: 50%;
+    margin: 20px 0;
+}
+
+/* MOVE BLOCK */
+
+.move_block {
+    /*background:var(--orange);*/
+    padding: 100px 0;
+    margin-top: 250px;
+    /*border:2px solid black;*/
+}
+
+.inner_parent_block {
+    height: 400px;
+    width: 400px;
+    border-radius: 18px;
+}
+
+.parent_block {
+    height: 500px;
+    width: 500px;
+    position: relative;
+    margin: 0 auto;
+    background:url('https://st.depositphotos.com/1380740/2438/v/450/depositphotos_24383501-stock-illustration-pizza-icon.jpg')center center/cover no-repeat;
+    padding:0;
+
+
+}
+
+.child_block {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    /*background-color: red;*/
+    background:url("https://www.svgrepo.com/show/133152/tomato.svg") center center/cover no-repeat;
+    border-radius: 50%;
+
+}
+
+.second{
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    /*background-color: red;*/
+    background:url("https://www.svgviewer.dev/static-svgs/435510/salami.svg") center center/cover no-repeat;
+    border-radius: 50%;
+
+
+}
+.third{
+    background:url("https://www.svgrepo.com/show/10289/cheese.svg")center center/cover no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+
+}
+.fourth{
+    background:url("https://cdn-icons-png.flaticon.com/512/4714/4714148.png")center center/cover no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+
+}
+.fifth{
+    background:url("https://images.vexels.com/media/users/3/336372/isolated/preview/72e69ff1135ab7e79b665c76634d86d9-bowl-of-tomato-sauce.png")center center/cover no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top:0;
+}
+.sixth{
+    background:url("https://toppng.com//public/uploads/preview/fixed-price-pizza-pizza-dough-clipart-11563029204cueu0mmqbb.png")center center/cover no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+}
+
+
+.inner_move_block {
+    margin-top: 50px;
+}
+
+/*-------STOP WATCH------ */
+.stopwatch{
+    background: white;
+}
+.time {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid var(--orange);
+    margin-top: 40px;
+}
+
+.time_block {
+    display: flex;
+    width: 500px;
+    justify-content: center;
+}
+
+.stopwatch {
+    padding: 100px 0;
+    background: black;
+}
+
+.time_buttons {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
